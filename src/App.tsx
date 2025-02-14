@@ -1,21 +1,13 @@
-import { useState } from 'react';
-import styles from './App.module.css';
+import TypingSpeedTest from './components/TypingSpeedTest';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className={styles['App']}>
-      <h1 className={styles['app-heading']}>Vite + React + TS + Tailwind</h1>
-      <div>
-        <button className={styles['button']} onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-    </div>
+    <>
+      <TypingSpeedTest />
+      <footer className="fixed bottom-0 w-full py-4 bg-black/20 backdrop-blur-lg text-center text-sm text-white/80">
+        Copyright © 2025   |   LittleBigDots | Made with ❤️ in Bengaluru, India
+      </footer>
+    </>
   );
 }
 
